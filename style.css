@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #272727;
+  min-width: 100%;
+  font-family: "Poppins";
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  color: #ad83dd;
+}
+
+h2 {
+  color: #a8c9fd;
+}
+
+.container {
+  max-width: 100vw;
+  background-color: #e7e7e7;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.header {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.header img {
+  max-width: 100%;
+}
+
+.block {
+  background-color: #2f2f2f;
+  color: #dadada;
+  width: 92%;
+  margin: auto;
+  border-radius: 8px;
+  padding: 1%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  font-size: 1.02em;
+}
+
+.block p {
+  padding: 2%;
+  font-size: 1.1em;
+}
+
+.block p a {
+  text-decoration: none;
+  color: #a8c9fd;
+}
+
+.block img {
+  max-width: 100%;
+  padding: 1px;
+}
+
+.block iframe {
+  width: 95%;
+  height: 550px;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  margin: auto;
+}
+
+.overlay:target {
+  visibility: visible;
+  outline: none;
+  cursor: default;
+  opacity: 1;
+}
+
+.overlay:target img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media only screen and (min-width: 1001px) {
+  body {
+    font-size: 1.2em;
+  }
+  .block {
+    width: 74%;
+  }
+  .header {
+    background-color: #2f2f2f;
+  }
+  .header img {
+    padding: 20px 0 18px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
